@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Камера</title>
+  <link rel="stylesheet" href="style.css"/>
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Камера" />
+</head>
+<body>
+  <div id="camera-container">
+    <video id="video" autoplay playsinline></video>
+    <canvas id="canvas" style="display: none;"></canvas>
+    <div id="controls">
+      <button id="capture-button"></button>
+    </div>
+  </div>
+
+  <div id="preview-container" class="hidden">
+    <img id="preview" />
+    <div id="preview-controls">
+      <button id="save-button">Сохранить</button>
+      <button id="cancel-button">Отмена</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
